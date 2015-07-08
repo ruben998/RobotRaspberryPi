@@ -7,11 +7,11 @@ This protocol is used for the client/server application for a robot with raspber
 
 ## Table of contents
 
-   ### 1. Introduction
+   ## 1. Introduction
 
-   ### 2. The robot specification
+   ## 2. The robot specification
       This section shows the protocol used for the application.
-   ### 2.1 Client Commands Semantics
+   ## 2.1 Client Commands Semantics
    	  First, we defined the commands used by the client, we have six commands.
       
       FRWD
@@ -27,5 +27,5 @@ This protocol is used for the client/server application for a robot with raspber
       CLSE
       	This command is used for stop the robot and the close application
         
-   ### 2.2 Server Commands Semantics
-   ### 2.3 Command syntax
+   ## 2.2 Server Commands Semantics
+   ## 2.3 Command syntax
