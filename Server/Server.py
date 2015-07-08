@@ -2,11 +2,11 @@
 
 ## Imports ## 
 import socket
-import thread
-import MovesServer
+import thread 
+import MovesServer as moves
 
 
-
+# This function checks the options, in case of error of the protocol stopped robot
 def menu(opcio):
     if opcio == 'frwd':
         moves.forward()
@@ -33,9 +33,8 @@ def handler(clientsocket, clientaddr):
     clientsocket.close()
 
 def main():
-    moves = MovesServer()
-
-    stop() 
+    moves.init()
+    moves. stop() 
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
      
@@ -46,3 +45,4 @@ def main():
     	sc, addr = s.accept()
     	thread.start_new_thread(handler,(sc,addr))
 main()
+
